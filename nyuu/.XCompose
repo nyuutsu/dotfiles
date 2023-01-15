@@ -1,0 +1,129 @@
+include "%L"
+
+## basic
+
+# 😊 moods 😊
+<Multi_key> <less> <3> : "♥" U2665 # BLACK HEART SUIT
+<Multi_key> <colon> <parenleft> : "☻" U263B # BLACK SMILING FACE
+
+# 🗳️ votes 🗳️
+<Multi_key> <bracketleft> <bracketright> : "☑" U2611 # BALLOT BOX WITH CHECK
+<Multi_key> <v> <v> : "✓" U2713 # CHECK MARK
+<Multi_key> <X> <X> : "✗" U2717 # BALLOT X
+
+# symbols
+<Multi_key> <a> <t> <o> <m> : "⚛" U269B # ATOM SYMBOL
+<Multi_key> <z> <a> <p> : "⚡" U26A1 # HIGH VOLTAGE SIGN 
+<Multi_key> <r> <o> <d> : "⚕" U2695 # STAFF OF AESCULAPIUS
+<Multi_key> <a> <t> : "⌘" U2318 # PLACE OF INTEREST SIGN
+<Multi_key> <d> <C> : "℃" U2103 # DEGREE CELSIUS
+<Multi_key> <d> <F> : "℉" U2109 # DEGREE FAHRENHEIT
+
+# 🗺️ directions 🗺️
+<Multi_key> <caret> <bar> : "↑" U2191 # UPWARDS ARROW
+<Multi_key> <v> <bar> : "↓" U2193 # DOWNWARDS ARROW
+<Multi_key> <less> <minus> : "←" U2190 # LEFTWARDS ARROW
+<Multi_key> <minus> <greater> : "→" U2192 # RIGHTWARDS ARROW
+
+# puncts
+<Multi_key> <asterisk> <minus> : "•" U2022 # BULLET
+<Multi_key> <period> <period> <period> : "…" U2026 # HORIZONTAL ELLIPSIS
+<Multi_key> <asterisk> <asterisk> :"⁑" U2051 # TWO ASTERISKS ALIGNED VERTICALLY
+<Multi_key> <asterisk> <asterisk> <asterisk> : "⁂" U2042 # ASTERISM
+<Multi_key> <bar> <bar> : "¦" U00A6 # BROKEN BAR
+<Multi_key> <period> <colon> : "∴" U2234 # THEREFORE
+
+# select emoji
+<Multi_key> <t> <e> <a> : "☕" U2615 # HOT BEVERAGE
+<Multi_key> <b> <a> <g> : "💰" U1F4B0 # MONEY BAG
+
+# 📝 letters 📝
+<Multi_key> <g> <D> : "Δ" U0394 # GREEK CAPITAL LETTER DELTA
+<Multi_key> <g> <X> : "Ξ" U039e # GREEK CAPITAL LETTER XI
+<Multi_key> <g> <l> : "λ" U03bb # GREEK SMALL LETTER LAMBDA
+
+
+## unicode private use area
+<Multi_key> <b> <t> <w> : "" UF203 # ARCH BTW
+# TODO:   ﬙  塞             
+
+## 🎮 games 🎮
+
+# chess
+<Multi_key> <W> <K> : "♔" U2654 # WHITE CHESS KING
+<Multi_key> <W> <Q> : "♕" U2655 # WHITE CHESS QUEEN
+<Multi_key> <W> <R> : "♖" U2656 # WHITE CHESS ROOK
+<Multi_key> <W> <B> : "♗" U2657 # WHITE CHESS BISHOP
+<Multi_key> <W>1 <N> : "♘" U2658 # WHITE CHESS KNIGHT
+<Multi_key> <W> <P> : "♙" U2659 # WHITE CHESS PAWN
+<Multi_key> <B> <K> : "♚" U265A # BLACK CHESS KING
+<Multi_key> <B> <Q> : "♛" U265B # BLACK CHESS QUEEN
+<Multi_key> <B> <R> : "♜" U265C # BLACK CHESS ROOK
+<Multi_key> <B> <B> : "♝" U265D # BLACK CHESS BISHOP
+<Multi_key> <B> <N> : "♞" U265E # BLACK CHESS KNIGHT
+<Multi_key> <B> <P> : "♟" U265F # BLACK CHESS PAWN
+
+# cards
+<Multi_key> <A> <S> : "🂡" U1F0A1 # PLAYING CARD ACE OF SPADES
+<Multi_key> <2> <S> : "🂢" U1F0A2 # PLAYING CARD TWO OF SPADES
+<Multi_key> <3> <S> : "🂣" U1F0A3 # PLAYING CARD THREE OF SPADES
+<Multi_key> <4> <S> : "🂤" U1F0A4 # PLAYING CARD FOUR OF SPADES
+<Multi_key> <5> <S> : "🂥" U1F0A5 # PLAYING CARD FIVE OF SPADES
+<Multi_key> <6> <S> : "🂦" U1F0A6 # PLAYING CARD SIX OF SPADES
+<Multi_key> <7> <S> : "🂧" U1F0A7 # PLAYING CARD SEVEN OF SPADES
+<Multi_key> <8> <S> : "🂨" U1F0A8 # PLAYING CARD EIGHT OF SPADES
+<Multi_key> <9> <S> : "🂩" U1F0A9 # PLAYING CARD NINE OF SPADES
+<Multi_key> <T> <S> : "🂪" U1F0AA # PLAYING CARD TEN OF SPADES
+<Multi_key> <J> <S> : "🂫" U1F0AB # PLAYING CARD JACK OF SPADES
+<Multi_key> <N> <S> : "🂬" U1F0AC # PLAYING CARD KNIGHT OF SPADES
+<Multi_key> <Q> <S> : "🂭" U1F0AD # PLAYING CARD QUEEN OF SPADES
+<Multi_key> <K> <S> : "🂮" U1F0AE # PLAYING CARD KING OF SPADES
+
+<Multi_key> <A> <H> : "🂱" U1F0B1 # PLAYING CARD ACE OF HEARTS
+<Multi_key> <2> <H> : "🂲" U1F0B2 # PLAYING CARD TWO OF HEARTS
+<Multi_key> <3> <H> : "🂳" U1F0B3 # PLAYING CARD THREE OF HEARTS
+<Multi_key> <4> <H> : "🂴" U1F0B4 # PLAYING CARD FOUR OF HEARTS
+<Multi_key> <5> <H> : "🂵" U1F0B5 # PLAYING CARD FIVE OF HEARTS
+<Multi_key> <6> <H> : "🂶" U1F0B6 # PLAYING CARD SIX OF HEARTS
+<Multi_key> <7> <H> : "🂷" U1F0B7 # PLAYING CARD SEVEN OF HEARTS
+<Multi_key> <8> <H> : "🂸" U1F0B8 # PLAYING CARD EIGHT OF HEARTS
+<Multi_key> <9> <H> : "🂹" U1F0B9 # PLAYING CARD NINE OF HEARTS
+<Multi_key> <T> <H> : "🂺" U1F0BA # PLAYING CARD TEN OF HEARTS
+<Multi_key> <J> <H> : "🂻" U1F0BB # PLAYING CARD JACK OF HEARTS
+<Multi_key> <N> <H> : "🂼" U1F0BC # PLAYING CARD KNIGHT OF HEARTS
+<Multi_key> <Q> <H> : "🂽" U1F0BD # PLAYING CARD QUEEN OF HEARTS
+<Multi_key> <K> <H> : "🂾" U1F0BE # PLAYING CARD KING OF HEARTS
+
+<Multi_key> <A> <D> : "🃁" U1F0C1 # PLAYING CARD ACE OF DIAMONDS
+<Multi_key> <2> <D> : "🃂" U1F0C2 # PLAYING CARD TWO OF DIAMONDS
+<Multi_key> <3> <D> : "🃃" U1F0C3 # PLAYING CARD THREE OF DIAMONDS
+<Multi_key> <4> <D> : "🃄" U1F0C4 # PLAYING CARD FOUR OF DIAMONDS
+<Multi_key> <5> <D> : "🃅" U1F0C5 # PLAYING CARD FIVE OF DIAMONDS
+<Multi_key> <6> <D> : "🃆" U1F0C6 # PLAYING CARD SIX OF DIAMONDS
+<Multi_key> <7> <D> : "🃇" U1F0C7 # PLAYING CARD SEVEN OF DIAMONDS
+<Multi_key> <8> <D> : "🃈" U1F0C8 # PLAYING CARD EIGHT OF DIAMONDS
+<Multi_key> <9> <D> : "🃉" U1F0C9 # PLAYING CARD NINE OF DIAMONDS
+<Multi_key> <T> <D> : "🃊" U1F0CA # PLAYING CARD TEN OF DIAMONDS
+<Multi_key> <J> <D> : "🃋" U1F0CB # PLAYING CARD JACK OF DIAMONDS
+<Multi_key> <N> <D> : "🃌" U1F0CC # PLAYING CARD KNIGHT OF DIAMONDS
+<Multi_key> <Q> <D> : "🃍" U1F0CD # PLAYING CARD QUEEN OF DIAMONDS
+<Multi_key> <K> <D> : "🃎" U1F0CE # PLAYING CARD KING OF DIAMONDS
+
+<Multi_key> <A> <C> : "🃑" U1F0D1 # PLAYING CARD ACE OF CLUBS
+<Multi_key> <2> <C> : "🃒" U1F0D2 # PLAYING CARD TWO OF CLUBS
+<Multi_key> <3> <C> : "🃓" U1F0D3 # PLAYING CARD THREE OF CLUBS
+<Multi_key> <4> <C> : "🃔" U1F0D4 # PLAYING CARD FOUR OF CLUBS
+<Multi_key> <5> <C> : "🃕" U1F0D5 # PLAYING CARD FIVE OF CLUBS
+<Multi_key> <6> <C> : "🃖" U1F0D6 # PLAYING CARD SIX OF CLUBS
+<Multi_key> <7> <C> : "🃗" U1F0D7 # PLAYING CARD SEVEN OF CLUBS
+<Multi_key> <8> <C> : "🃘" U1F0D8 # PLAYING CARD EIGHT OF CLUBS
+<Multi_key> <9> <C> : "🃙" U1F0D9 # PLAYING CARD NINE OF CLUBS
+<Multi_key> <T> <C> : "🃚" U1F0DA # PLAYING CARD TEN OF CLUBS
+<Multi_key> <J> <C> : "🃛" U1F0DB # PLAYING CARD JACK OF CLUBS
+<Multi_key> <N> <C> : "🃜" U1F0DC # PLAYING CARD KNIGHT OF CLUBS
+<Multi_key> <Q> <C> : "🃝" U1F0DD # PLAYING CARD QUEEN OF CLUBS
+<Multi_key> <K> <C> : "🃞" U1F0DE # PLAYING CARD KING OF CLUBS
+
+<Multi_key> <C> <B> : "🂠" U1F0A0 # PLAYING CARD BACK
+<Multi_key> <B> <J> : "🃏" U1F0CF # PLAYING CARD BLACK JOKER
+<Multi_key> <W> <J> : "🃟" U1F0DF # PLAYING CARD WHITE JOKER

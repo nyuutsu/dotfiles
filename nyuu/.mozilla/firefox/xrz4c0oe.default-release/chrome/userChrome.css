@@ -1,0 +1,26 @@
+/* Moves View Image to the very top */
+menuitem[id*="view-image-context-menu-item"] { -moz-box-ordinal-group: 0 !important; }
+
+/* Moves View Video to the very top */
+menuitem[id*="view-video-context-menu-item"] { -moz-box-ordinal-group: 0 !important; }
+
+/* Moves View Audio to the very top */
+menuitem[id*="view-audio-context-menu-item"] { -moz-box-ordinal-group: 0 !important; }
+
+/* Hides Open Image In New Tab */
+#context-viewimage { display: none; }
+
+/* Hides Open Video In New Tab */
+#context-viewvideo { display: none; }
+
+#main-window[tabsintitlebar="true"]:not([extradragspace="true"]) #TabsToolbar > .toolbar-items {
+  opacity: 0;
+  pointer-events: none;
+}
+#main-window:not([tabsintitlebar="true"]) #TabsToolbar {
+    visibility: collapse !important;
+}
+
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
+  display: none;
+}

@@ -1,0 +1,148 @@
+[settings]
+columns = ~#track,~#disc,artist,~title~version,<date> - <album>,~#bitrate,~#length
+	
+default_rating = 0.5
+scan = /home/nyuu/Music
+
+[memory]
+browser = Paned
+chooser_dir = /home/nyuu/Downloads
+column_expands = artist,0,~title~version,0,<date> - <album>,0
+	
+column_widths = artist,234,~title~version,461,<date> - <album>,910
+	
+download_cover_art_maximized = 0
+download_cover_art_position = 0 27
+download_cover_art_size_ = 1366 690
+open_browsers = 
+plugin_prefs_maximized = 0
+plugin_prefs_position = 961 4
+plugin_prefs_size_ = 953 1050
+plugin_selection = Animated On-Screen Display
+prefs_page = songlist
+queue = True
+queue_disable = False
+queue_expanded = False
+queue_position = 0.6925675675675675
+quodlibet_information_maximized = 0
+quodlibet_information_position = 454 175
+quodlibet_information_size_ = 458 400
+quodlibet_last_active_version = 4.5.0
+quodlibet_maximized = 4
+quodlibet_position = 275 159
+quodlibet_properties_maximized = 0
+quodlibet_properties_pos = 0.07722007722007722
+quodlibet_properties_position = 340 242
+quodlibet_properties_size_ = 777 400
+quodlibet_properties_size_single = 712 400
+quodlibet_size_ = 600 480
+seek = 0
+sidebar_pos = 0.945
+song = /home/nyuu/Music/System Of A Down/Mezmerize/11 Lost in Hollywood.mp3
+sortby = 0<date> - <album>
+	
+volume = 1.0
+
+[player]
+gst_buffer = 3.0
+is_playing = False
+replaygain = true
+replaygain_mode = auto
+
+[browsers]
+album_text = true
+albumlist_pos = 0.39901477832512317
+albums = ('ed3fcc9d-9b64-4bd7-b124-f7ec044933dd', ('black sails in the sunset',), ('afi',))
+collectionbrowser_pos = 0.3998410174880763
+covergrid_all = true
+covergrid_pos = 0.7074468085106383
+equal_pane_width = false
+filesystem_pos = 0.3998410174880763
+internetradio_pos = 0.39967506092607635
+pane_selection = 0	System of a Down	.
+	1	.
+	0	1/1	.
+panedbrowser_pane_widths = 0.39707419017763845,0.8485639686684073
+	
+panedbrowser_pos = 0.3060240963855422
+panes = albumartist	<date> - <album>	discnumber
+playlistsbrowser_pos = 0.3998410174880763
+query_text = 
+
+[__config__]
+version = 0
+
+[plugins]
+active_plugins = Last.fm Sync
+	embedded_edit
+	QLScrobbler
+	Animated On-Screen Display
+	WaveformSeekBar
+	Tray Icon
+	SeekBar
+	HeadphoneMonitor
+	Title Case
+	skip_songs
+	Download Album Art
+	lastfm-cover
+	playcounteq
+	APEv2 to ID3v2
+	Convert Encodings
+animosd_align = 0
+animosd_corners = 0
+animosd_coversize = 80
+animosd_fill = 0.0 0.16861219195849547 0.21176470588235294 1.0
+animosd_font = FiraCode Nerd Font 12
+animosd_monitor = 0
+animosd_outline = -1.0 0.0 0.0
+animosd_pos_x = 1.0
+animosd_pos_y = 0.0
+animosd_shadow = -1.0 0.0 0.0 0.0
+animosd_string = <album|[b]<album>[/b]<discnumber| - Disc <discnumber>><part| - [b]<part>[/b]><tracknumber| - <tracknumber>>
+	>[span weight='bold' size='large']<title>[/span] - <~length><version|
+	[small][i]<version>[/i][/small]><artist|
+	by <artist>>
+animosd_text = 0.34509803921568627 0.43137254901960786 0.4588235294117647 0.0
+cover_edit = False
+cover_edit_cmd = gimp
+cover_engine_amazon = True
+cover_engine_discogs = True
+cover_filename = cover.jpg
+cover_fit = true
+cover_resultsmax = 5
+cover_searchraw = True
+download_cover_art_preview_size = 500.0
+download_cover_art_save_pattern = cover
+icon_tooltip = <album|<album~discnumber~part~tracknumber~title~version>|<artist~title~version>>
+lastfmsync_username = noworkingtitle
+missing_query_include_empty = True
+notify_show_notifications = all
+quodlibet.fake.plugins.gajim_status_accounts = 
+quodlibet.fake.plugins.gajim_status_pattern = <artist> - <title>
+quodlibet.fake.plugins.gajim_status_paused = True
+quodlibet.fake.plugins.gajim_status_statuses = online chat
+quodlibet.fake.plugins.visualisations_executable = projectM-pulseaudio
+quodlibet.fake.plugins.waveformseekbar_show_current_pos = False
+randomalbum_use_weights = 0
+scrobbler_password = eKvabw4hU3ddf7jN79xuDo!!eagveD7XH!r2fq@CqVS372cpqqgSxyJ5@iqY?Wbt2bLTMejU!essimJi3KNuNS9JVRvHsJtDK47V
+scrobbler_service = Last.fm
+scrobbler_username = noworkingtitle
+shufflebygrouping_grouping = ~grouping~album~albumartist
+shufflebygrouping_grouping_filter = grouping
+skip_songs_threshold = 0.01
+squeezebox_debug = False
+titlecase_allow_all_caps = True
+titlecase_human_title_case = True
+
+[rename]
+windows = false
+
+[albumart]
+filename = cover*
+force_filename = true
+
+[editing]
+alltags = true
+save_to_songs = false
+show_multi_line_tags = true
+

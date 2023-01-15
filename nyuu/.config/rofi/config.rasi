@@ -1,0 +1,9 @@
+configuration {
+  terminal: "/usr/bin/urxvt";
+  modi: "window,drun,run,ssh,filebrowser";
+  hide-scrollbar: "true";
+  levenshtein-sort: false;
+  sidebar-mode: true;
+  cycle: true;
+}
+@theme "/usr/share/rofi/themes/nord.rasi"

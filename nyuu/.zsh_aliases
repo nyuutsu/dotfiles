@@ -1,0 +1,37 @@
+alias lilyterm='urxvt'
+alias yaourt='paru'
+alias pacaur='paru'
+alias yay='paru'
+alias cat='bat'
+
+alias update='paru -Syyu --noconfirm'
+alias install='paru -S --noconfirm'
+alias uninstall='paru -Rs --noconfirm'
+alias hard-uninstall='paru -Rdd --noconfirm'
+alias orphans='pacman -Qttdq | sudo pacman -Rns --noconfirm'
+
+alias cache-trim='paccache -rk1 && paccache -ruk0'
+
+alias info='paru -Si'
+alias installed-by='paru -Ql'
+alias explicitly-installed='paru -Qet'
+alias from-group='paru Sg'
+alias browse='pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)''
+
+alias diff='diff --color=auto'
+alias grep='grep --color=auto'
+alias ip='ip -color=auto'
+alias make='colormake'
+alias ping='prettyping'
+
+alias dmesg='dmesg --color=always | less'
+
+alias nyuu.page='cd ~/repos/nyuu.page && pelican content && rsync -avc --delete output/ nyuu.page:/var/www/html/'
+
+alias find='noglob find'
+alias wget='noglob wget'
+
+LSOPTS="-lAvF --si --color=auto"
+LLOPTS="$LLOPTS --color=always"
+alias ls="ls $LSOPTS"
+alias ll="ls $LLOPTS | less -FX"

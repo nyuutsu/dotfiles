@@ -1,0 +1,56 @@
+! special
+*.foreground:   #c6c6c6
+*.background:   #0F1212
+*.cursorColor:  #888a8c
+
+! black
+*.color0:       #515151
+*.color8:       #707172
+
+! red
+*.color1:       #bf6382
+*.color9:       #eaaec2
+
+! green
+*.color2:       #65a446
+*.color10:      #aed49b
+
+! yellow
+*.color3:       #ad8a43
+*.color11:      #d4c3a0
+
+! blue
+*.color4:       #6b85c2
+*.color12:      #afc4e9
+
+! magenta
+*.color5:       #9e6bb8
+*.color13:      #d2b1e2
+
+! cyan
+*.color6:       #5c9d88
+*.color14:      #a4d0c1
+
+! white
+*.color7:       #919191
+*.color15:      #d0d0d0
+
+URxvt.font: \
+  xft:FiraCode Nerd Font Mono:style=regular:pixelsize=18, \
+  xft:IPAmjMincho:style=regular,pixelsize=18
+
+URxvt.colorIT:      #87af5f
+URxvt.colorBD:      #d7d7d7
+URxvt.colorUL:      #87afd7
+
+URxvt.letterspace: 1
+URxvt.scrollBar: false
+URxvt.transparent: true
+URxvt.shading: 35
+! urxvt*blurRadius: 15
+
+URxvt.perl-ext-common:  ...,resize-font,...
+URxvt.internalBorder: 20px
+URxvt.iconfile:  /usr/share/icons/Adwaita/scalable/apps/utilities-terminal-symbolic.svg
+vim*transparent: false
+vim.internalBorder: 0

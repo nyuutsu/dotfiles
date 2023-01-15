@@ -1,0 +1,71 @@
+general {
+  color_good = "#a4d0c1"
+  color_degraded ="#b58900"
+  color_bad = "#d33682"
+  colors = true
+  interval = 5
+}
+
+#order += "ipv6"
+order += "wireless _first_"
+#order += "ethernet _first_"
+order += "volume master"
+order += "battery all"
+order += "disk /"
+order += "disk /home"
+#order += "load"
+order += "cpu_usage"
+order += "memory"
+order += "tztime local"
+
+wireless _first_ {
+  format_up = "W: (%quality at %essid) %ip"
+  format_down = "W: down"
+}
+
+ethernet _first_ {
+  format_up = "E: %ip (%speed)"
+  format_down = "E: down"
+}
+
+volume master {
+  format = " ♪ %volume" 
+  device = "default"
+  mixer = "Master"
+  mixer_idx = 0
+}
+
+battery all {
+  format = "BAT %status %percentage %remaining"
+}
+
+disk "/" {
+  format = " / @ %percentage_used"
+}
+
+#disk "/media/hdd-array" {
+#       format = "array @ %percentage_used"
+#}
+
+disk "/home" {
+  format = " home @ %percentage_used"
+}
+
+load {
+  format = "L %1min %5min %15min"
+  format_above_threshold = "load @ %1min(!!) %5min %15min"
+}
+
+memory {
+  format = "塞 %percentage_used"
+  threshold_degraded = "1G"
+  format_degraded = "MEMORY < %available"
+}
+
+tztime local {
+  format = " %A, %Y-%m-%d [%I:%M]"
+} # %Z
+
+cpu_usage {
+  format = " %usage"
+}
