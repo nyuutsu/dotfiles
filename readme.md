@@ -2,7 +2,7 @@ Hi! These are my dotfiles.
 
 If anyone benefits from something in here then I am thrilled.
 
-I recommend not running any scripts sunless you are are me. 
+I recommend not running any scripts sunless you are are me.
 
 They'll probably work! But you probably do not want to overwrite your gitconfig with mine, you know?
 
@@ -53,3 +53,9 @@ To break that down:
 You probably do not want this! So you should not run it!
 
 If you must do so anyway, you might need to run `chmod +x` on it first.
+
+# Misc
+
+* vimrc to be included shortly
+
+* os install script to be included eventually
