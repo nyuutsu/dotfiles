@@ -54,7 +54,7 @@ include "%L"
 <Multi_key> <W> <Q> : "♕" U2655 # WHITE CHESS QUEEN
 <Multi_key> <W> <R> : "♖" U2656 # WHITE CHESS ROOK
 <Multi_key> <W> <B> : "♗" U2657 # WHITE CHESS BISHOP
-<Multi_key> <W>1 <N> : "♘" U2658 # WHITE CHESS KNIGHT
+<Multi_key> <W> <N> : "♘" U2658 # WHITE CHESS KNIGHT
 <Multi_key> <W> <P> : "♙" U2659 # WHITE CHESS PAWN
 <Multi_key> <B> <K> : "♚" U265A # BLACK CHESS KING
 <Multi_key> <B> <Q> : "♛" U265B # BLACK CHESS QUEEN
