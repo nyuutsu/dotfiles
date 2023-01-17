@@ -2,7 +2,7 @@ Hi! These are my dotfiles.
 
 If anyone benefits from something in here then I am thrilled.
 
-I recommend not running any scripts sunless you are are me.
+I recommend not running any scripts unless you are are me.
 
 They'll probably work! But you probably do not want to overwrite your gitconfig with mine, you know?
 
@@ -18,9 +18,7 @@ I'm especially happy with the:
 
 * Xcompose
 
-* ~~blobmoji urxvt compatibility variant~~ *coming soon*¹
-
-¹ there's nothing *stopping* urxvt from displaying the full visible unicode character set. You can use an "emoji font" if you want! But the only version of "blobmoji" I see out there has comic neue baked in, making "use fallthrough properties to achieve this font being used for emoji and not for anything else", impossible. I am maybe an afternoon of fiddling away from making a version better suited to what I want to do.
+* ~~blobmoji urxvt compatibility variant~~ *coming soon*
 
 # On files in `/etc` and `/usr`
 
