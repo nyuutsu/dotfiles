@@ -29,21 +29,20 @@
   untracked = cyan
 
 [alias]
+  df = diff
   lg = log --oneline --graph --decorate
   st = status
-  df = diff
-
+  
   br = branch
   co = checkout
+  rs = reset --hard origin/main
   
   ci = commit
-  ciam = commit -am
-  
   re = rebase -i --root
-  pf = push --force
-
-  ps = push -u origin main
-  rs = reset --hard origin/main
+  
+  fpush = "! fpush() { git commit -a -m \"$1\" && git push ; } ; fpush"
+  opush = push -u origin main
+  supush = push --force
 
 [push]
   default = current
