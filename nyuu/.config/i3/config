@@ -1,6 +1,6 @@
 ## basic commands
 
-# mod4 = meta
+# on my keyboard mod4 is the 'meta' key
 set $mod Mod4
 bindsym control+space exec "rofi -modi window#drun#run#ssh -show drun"
 bindsym $mod+Shift+q kill
@@ -12,11 +12,12 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 ## startup
 
 exec_always --no-startup-id picom --experimental-backends -cb --config ~/.config/picom/picom.conf
-exec --no-startup-id feh --bg-scale $HOME/.config/feh/wallpaper.jpg
-exec --no-startup-id "xmodmap ~/.Xmodmap"
-exec --no-startup-id nm-applet
 exec --no-startup-id dunst
-exec redshift-gtk
+exec --no-startup-id feh --bg-scale $HOME/.config/feh/wallpaper.jpg
+exec --no-startup-id nm-applet
+exec --no-startup-id redshift-gtk
+exec --no-startup-id "xmodmap ~/.Xmodmap"
+# TODO: compare this vs in-app "start on startup" setting"
 exec keepassxc
 
 ## decorations
