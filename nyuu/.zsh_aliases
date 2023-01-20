@@ -8,9 +8,8 @@ alias update='paru -Syyu --noconfirm'
 alias install='paru -S --noconfirm'
 alias uninstall='paru -Rs --noconfirm'
 alias hard-uninstall='paru -Rdd --noconfirm'
-alias orphans='pacman -Qttdq | sudo pacman -Rns --noconfirm'
-
-alias cache-trim='paccache -rk1 && paccache -ruk0'
+alias orphans="sudo -- zsh -c 'pacman -Qttdq | sudo pacman -Rns - --noconfirm'"
+alias cache-trim="sudo -- zsh -c 'paccache -rk1 && paccache -ruk0'"
 
 alias info='paru -Si'
 alias installed-by='paru -Ql'

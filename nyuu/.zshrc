@@ -98,10 +98,6 @@ bindkey "\e[7~" beginning-of-line
 bindkey '^i' complete-word  # tab to do menu
 bindkey "\e[Z" reverse-menu-complete  # shift-tab to reverse menu
 
-# tab completion
-bindkey '^i' complete-word  # tab to do menu
-bindkey "\e[Z" reverse-menu-complete  # shift-tab to reverse menu
-
 # shared history for ^R, other shell history ignored
 down-line-or-local-history() {
   zle set-local-history 1
