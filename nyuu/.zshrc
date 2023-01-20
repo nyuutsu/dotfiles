@@ -44,14 +44,18 @@ setopt complete_in_word
 setopt extended_history hist_no_store hist_ignore_dups hist_expire_dups_first hist_find_no_dups inc_append_history share_history hist_reduce_blanks hist_ignore_space
 
 export HISTFILE=~/.zsh_history
-export HISTSIZE=1000000
-export SAVEHIST=1000000
+export HISTSIZE=999999999
+export SAVEHIST=$HISTSIZE
+#export HISTSIZE=1000000
+#export SAVEHIST=1000000
 
 ## misc
 
 # .. options
 setopt autocd beep extendedglob nomatch rc_quotes
 unsetopt notify
+# allow extendedglob + #-based command "comments"/"tags"
+disable -p '#'
 
 # don't count common path separators as word characters
 WORDCHARS=${WORDCHARS//[&.;\/]}
