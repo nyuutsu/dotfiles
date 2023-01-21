@@ -8,14 +8,15 @@ alias update='paru -Syyu --noconfirm'
 alias install='paru -S --noconfirm'
 alias uninstall='paru -Rs --noconfirm'
 alias hard-uninstall='paru -Rsdd --noconfirm'
-alias orphans="sudo -- zsh -c 'pacman -Qttdq | sudo pacman -Rns - --noconfirm'"
+alias orphans="sudo -- zsh -c 'pacman -Qttdq | pacman -Rns - --noconfirm'"
 alias cache-trim="sudo -- zsh -c 'paccache -rk1 && paccache -ruk0'"
 
 alias info='paru -Si'
+alias comments='paru -Gc'
 alias installed-by='paru -Ql'
 alias explicitly-installed='paru -Qet'
 alias from-group='paru Sg'
-alias browse='pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)''
+alias browse="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
 
 alias diff='diff --color=auto'
 alias grep='grep --color=auto'
