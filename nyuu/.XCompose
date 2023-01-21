@@ -32,6 +32,9 @@ include "%L"
 <Multi_key> <asterisk> <asterisk> <asterisk> : "⁂" U2042 # ASTERISM
 <Multi_key> <bar> <bar> : "¦" U00A6 # BROKEN BAR
 <Multi_key> <period> <colon> : "∴" U2234 # THEREFORE
+<Multi_key> <less> <less> : "「" U300C # LEFT CORNER BRACKET
+<Multi_key> <greater> <greater> : "」" U300D # RIGHT CORNER BRACKET
+<Multi_key> <solidus> <solidus> : "⧸" U29F8 # BIG SOLIDUS
 
 # select emoji
 <Multi_key> <t> <e> <a> : "☕" U2615 # HOT BEVERAGE
