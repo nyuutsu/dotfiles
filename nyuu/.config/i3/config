@@ -9,6 +9,14 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3?' -B 'Yes, exit i3' 'i3-msg exit'"
 
+## initial workspace assignments
+
+assign [class="Firefox"] → 1
+assign [class="Code"] → 2
+assign [class="Signal"] → 3
+assign [class="Discord"] → 4
+assign [class="qBittorrent"] → 10
+
 ## startup
 
 exec_always --no-startup-id picom --experimental-backends -cb --config ~/.config/picom/picom.conf
