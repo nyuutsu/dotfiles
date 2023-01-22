@@ -18,12 +18,17 @@ alias explicitly-installed='paru -Qet'
 alias from-group='paru Sg'
 alias browse="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
 
+alias dots='cd repos/dotfiles'
+alias fn='find ./ -name '
+alias myip='curl http://icanhazip.com ; echo'
+alias epoch="date +%s"
+alias systemctl='sudo systemctl'
+
 alias diff='diff --color=auto'
 alias grep='grep --color=auto'
 alias ip='ip -color=auto'
 alias make='colormake'
 alias ping='prettyping'
-
 alias dmesg='dmesg --color=always | less'
 
 alias nyuu.page='cd ~/repos/nyuu.page && pelican content && rsync -avc --delete output/ nyuu.page:/var/www/html/'
