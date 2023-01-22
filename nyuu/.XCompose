@@ -34,7 +34,7 @@ include "%L"
 <Multi_key> <period> <colon> : "∴" U2234 # THEREFORE
 <Multi_key> <less> <less> : "「" U300C # LEFT CORNER BRACKET
 <Multi_key> <greater> <greater> : "」" U300D # RIGHT CORNER BRACKET
-<Multi_key> <solidus> <solidus> : "⧸" U29F8 # BIG SOLIDUS
+<Multi_key> <slash> <slash> : "⧸" U29F8 # BIG SOLIDUS
 
 # select emoji
 <Multi_key> <t> <e> <a> : "☕" U2615 # HOT BEVERAGE
