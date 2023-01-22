@@ -11,7 +11,8 @@ alias hard-uninstall='paru -Rsdd --noconfirm'
 alias orphans="sudo -- zsh -c 'pacman -Qttdq | pacman -Rns - --noconfirm'"
 alias cache-trim="sudo -- zsh -c 'paccache -rk1 && paccache -ruk0'"
 
-alias info='paru -Si'
+alias info='paru -Ss'
+alias pkinfo='paru -Si'
 alias comments='paru -Gc'
 alias installed-by='paru -Ql'
 alias explicitly-installed='paru -Qet'
