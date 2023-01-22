@@ -1,5 +1,7 @@
 include "%L"
 
+# todo: ᴾₖᴹₙ
+
 ## basic
 
 # 😊 moods 😊
@@ -17,6 +19,7 @@ include "%L"
 <Multi_key> <r> <o> <d> : "⚕" U2695 # STAFF OF AESCULAPIUS
 <Multi_key> <a> <t> : "⌘" U2318 # PLACE OF INTEREST SIGN
 <Multi_key> <d> <C> : "℃" U2103 # DEGREE CELSIUS
+<Multi_key> <d> <F> : "℉" U2109 # DEGREE FAHRENHEIT
 <Multi_key> <d> <F> : "℉" U2109 # DEGREE FAHRENHEIT
 
 # 🗺️ directions 🗺️
