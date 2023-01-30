@@ -1,8 +1,48 @@
 include "%L"
+# todo: ᴾₖᴹₙ? bulbapedia just uses CSS xforms on "p k m n"
 
-# todo: ᴾₖᴹₙ
+## 💘 arrows 💘 [broadly construed]
 
-## basic
+# "arrow keys"
+<Multi_key> <less> <minus> : "←" U2190 # LEFTWARDS ARROW
+<Multi_key> <caret> <bar> : "↑" U2191 # UPWARDS ARROW
+<Multi_key> <minus> <greater> : "→" U2192 # RIGHTWARDS ARROW
+<Multi_key> <v> <bar> : "↓" U2193 # DOWNWARDS ARROW
+
+# keyboard
+<Multi_key> <bar> <bar> : "¦" U00A6 # BROKEN BAR
+<Multi_key> <t> <a> <b> : "↹" U21B9 # LEFTWARDS ARROW TO BAR OVER RIGHTWARDS ARROW TO BAR
+<Multi_key> <p> <g> <u> : "⇞" U21DE # UPWARDS ARROW WITH DOUBLE STROKE
+<Multi_key> <p> <g> <d>  : "⇟" U21DF # DOWNWARDS ARROW WITH DOUBLE STROKE
+<Multi_key> <s> <h> <i> <f> <t> : "⇧" U21E7 # UPWARDS WHITE ARROW
+<Multi_key> <c> <a> <p> <s> : "⇪" U21EA # UPWARDS RIGHT ARROW FROM BAR
+<Multi_key> <h> <o> <m> <e> : "⇱" U21F1 # NORTH WEST ARROW TO CORNER
+<Multi_key> <e> <n> <d> : "⇲" U21F2 # SOUTH EAST ARROW TO CORNER
+<Multi_key> <w> <i> <n> : "⊞" U229E # SQUARED PLUS
+<Multi_key> <c> <m> <d> : "⌘" U2318 # PLACE OF INTEREST SIGN
+<Multi_key> <o> <p> <t> : "⌥" U2325 # OPTION KEY
+<Multi_key> <d> <e> <l> : "⌦" U2326 # ERASE TO THE RIGHT
+<Multi_key> <b> <a> <c> <k> : "⌫" U2329 # ERASE TO THE LEFT
+<Multi_key> <e> <s> <c> : "⎋" U238B # BROKEN CIRCLE WITH NORTHWEST ARROW
+<Multi_key> <r> <e> <t> : "⏎" U23CE # RETURN SYMBOL
+<Multi_key> <e> <j> <e> <c> <t> : "⏏" U23CF # EJECT SYMBOL
+<Multi_key> <m> <e> <t> <a> : "◆" U25C6 # BLACK DIAMOND
+
+
+## 📝 letters & letterlikes 📝
+
+# greek
+<Multi_key> <g> <d> : "Δ" U0394 # GREEK CAPITAL LETTER DELTA
+<Multi_key> <g> <l> : "λ" U03bb # GREEK SMALL LETTER LAMBDA
+
+# crypto
+<Multi_key> <b> <t> <c> : "₿" U20BF # BITCOIN
+<Multi_key> <e> <t> <h> : "Ξ" U039e # GREEK CAPITAL LETTER XI
+<Multi_key> <a> <m> <p> : "₳" U20B3 # ARGENTINE AUSTRAL
+
+## misc
+
+<Multi_key> <k> <b> : "⌨" U2328 # KEYBOARD
 
 # 😊 moods 😊
 <Multi_key> <less> <3> : "♥" U2665 # BLACK HEART SUIT
@@ -13,61 +53,27 @@ include "%L"
 <Multi_key> <v> <v> : "✓" U2713 # CHECK MARK
 <Multi_key> <X> <X> : "✗" U2717 # BALLOT X
 
-# symbols
-<Multi_key> <a> <t> <o> <m> : "⚛" U269B # ATOM SYMBOL
-<Multi_key> <z> <a> <p> : "⚡" U26A1 # HIGH VOLTAGE SIGN 
-<Multi_key> <r> <o> <d> : "⚕" U2695 # STAFF OF AESCULAPIUS
-<Multi_key> <a> <t> : "⌘" U2318 # PLACE OF INTEREST SIGN
-<Multi_key> <d> <C> : "℃" U2103 # DEGREE CELSIUS
-<Multi_key> <d> <F> : "℉" U2109 # DEGREE FAHRENHEIT
-<Multi_key> <d> <F> : "℉" U2109 # DEGREE FAHRENHEIT
-
-# 🗺️ directions 🗺️
-<Multi_key> <caret> <bar> : "↑" U2191 # UPWARDS ARROW
-<Multi_key> <v> <bar> : "↓" U2193 # DOWNWARDS ARROW
-<Multi_key> <less> <minus> : "←" U2190 # LEFTWARDS ARROW
-<Multi_key> <minus> <greater> : "→" U2192 # RIGHTWARDS ARROW
-
 # puncts
+
 <Multi_key> <asterisk> <minus> : "•" U2022 # BULLET
 <Multi_key> <period> <period> <period> : "…" U2026 # HORIZONTAL ELLIPSIS
-<Multi_key> <asterisk> <asterisk> :"⁑" U2051 # TWO ASTERISKS ALIGNED VERTICALLY
 <Multi_key> <asterisk> <asterisk> <asterisk> : "⁂" U2042 # ASTERISM
-<Multi_key> <bar> <bar> : "¦" U00A6 # BROKEN BAR
+<Multi_key> <asterisk> <asterisk> :"⁑" U2051 # TWO ASTERISKS ALIGNED VERTICALLY
 <Multi_key> <period> <colon> : "∴" U2234 # THEREFORE
-<Multi_key> <less> <less> : "「" U300C # LEFT CORNER BRACKET
-<Multi_key> <greater> <greater> : "」" U300D # RIGHT CORNER BRACKET
+<Multi_key> <bar> <underscore> : "「" U300C # LEFT CORNER BRACKET
+<Multi_key> <underscore> <bar> : "」" U300D # RIGHT CORNER BRACKET
 <Multi_key> <slash> <slash> : "⧸" U29F8 # BIG SOLIDUS
 
-# select emoji
-<Multi_key> <t> <e> <a> : "☕" U2615 # HOT BEVERAGE
-<Multi_key> <b> <a> <g> : "💰" U1F4B0 # MONEY BAG
-
-# 📝 letters 📝
-<Multi_key> <g> <D> : "Δ" U0394 # GREEK CAPITAL LETTER DELTA
-<Multi_key> <g> <X> : "Ξ" U039e # GREEK CAPITAL LETTER XI
-<Multi_key> <g> <l> : "λ" U03bb # GREEK SMALL LETTER LAMBDA
+<Multi_key> <s> <u> <p> <0> : "⁰" U2070 # SUPERSCRIPT ZERO
+<Multi_key> <s> <u> <p> <1> : "¹" U20B9 # SUPERSCRIPT ONE
 
 
 ## unicode private use area
 <Multi_key> <b> <t> <w> : "" UF203 # ARCH BTW
 # TODO:   ﬙  塞             
 
-## 🎮 games 🎮
 
-# chess
-<Multi_key> <W> <K> : "♔" U2654 # WHITE CHESS KING
-<Multi_key> <W> <Q> : "♕" U2655 # WHITE CHESS QUEEN
-<Multi_key> <W> <R> : "♖" U2656 # WHITE CHESS ROOK
-<Multi_key> <W> <B> : "♗" U2657 # WHITE CHESS BISHOP
-<Multi_key> <W> <N> : "♘" U2658 # WHITE CHESS KNIGHT
-<Multi_key> <W> <P> : "♙" U2659 # WHITE CHESS PAWN
-<Multi_key> <B> <K> : "♚" U265A # BLACK CHESS KING
-<Multi_key> <B> <Q> : "♛" U265B # BLACK CHESS QUEEN
-<Multi_key> <B> <R> : "♜" U265C # BLACK CHESS ROOK
-<Multi_key> <B> <B> : "♝" U265D # BLACK CHESS BISHOP
-<Multi_key> <B> <N> : "♞" U265E # BLACK CHESS KNIGHT
-<Multi_key> <B> <P> : "♟" U265F # BLACK CHESS PAWN
+## 🎮 games 🎮
 
 # cards
 <Multi_key> <A> <S> : "🂡" U1F0A1 # PLAYING CARD ACE OF SPADES
@@ -133,3 +139,17 @@ include "%L"
 <Multi_key> <C> <B> : "🂠" U1F0A0 # PLAYING CARD BACK
 <Multi_key> <B> <J> : "🃏" U1F0CF # PLAYING CARD BLACK JOKER
 <Multi_key> <W> <J> : "🃟" U1F0DF # PLAYING CARD WHITE JOKER
+
+# chess
+<Multi_key> <W> <K> : "♔" U2654 # WHITE CHESS KING
+<Multi_key> <W> <Q> : "♕" U2655 # WHITE CHESS QUEEN
+<Multi_key> <W> <R> : "♖" U2656 # WHITE CHESS ROOK
+<Multi_key> <W> <B> : "♗" U2657 # WHITE CHESS BISHOP
+<Multi_key> <W> <N> : "♘" U2658 # WHITE CHESS KNIGHT
+<Multi_key> <W> <P> : "♙" U2659 # WHITE CHESS PAWN
+<Multi_key> <B> <K> : "♚" U265A # BLACK CHESS KING
+<Multi_key> <B> <Q> : "♛" U265B # BLACK CHESS QUEEN
+<Multi_key> <B> <R> : "♜" U265C # BLACK CHESS ROOK
+<Multi_key> <B> <B> : "♝" U265D # BLACK CHESS BISHOP
+<Multi_key> <B> <N> : "♞" U265E # BLACK CHESS KNIGHT
+<Multi_key> <B> <P> : "♟" U265F # BLACK CHESS PAWN
