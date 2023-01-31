@@ -64,9 +64,9 @@ bindsym $mod+F8 exec brightnessctl set 10-
 bindsym $mod+F9 exec brightnessctl set +10
 
 # Pulse Audio controls for System76
-bindsym $mod+F6 exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound
-bindsym $mod+F5 exec --no-startup-id pactl set-sink-volume 0 -5% #lower volume
-bindsym $mod+F3 exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
+# bindsym $mod+F6 exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound
+# bindsym $mod+F5 exec --no-startup-id pactl set-sink-volume 0 -5% #lower volume
+# bindsym $mod+F3 exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
 
 # Screen Brightness for X220
 # bindsym XF86MonBrightnessUp exec light -A 5 # increase screen brightness
@@ -221,3 +221,34 @@ bar {
   }
   status_command i3status
 }
+
+## added by "cat i3volume-pulseaudio.conf >> ~/.config/i3/config" ↓
+
+## Volume control
+
+# Path to volume control, without trailing slash
+set $volumepath ~/scripts
+
+# Command for the status line
+#   ie: i3blocks, i3status
+set $statuscmd i3status
+
+# Signal used to update the status line
+#   i3blocks uses SIGRTMIN+10 by default
+#   i3status uses SIGUSR1 by default
+set $statussig SIGUSR1
+
+# Amount to increase/decrease volume as a percentage
+set $volumestep 5
+
+# pulseaudio-utils settings
+#
+# Symbolic name for sink (numeric index not supported)
+#   Recommended: comment out this setting and omit the -s option to use default sink
+#   List sink names: pacmd list-sinks | awk -F "[<>]" '/^\s+name: <.*>/{print $2}'
+#set $sinkname alsa_output.pci-0000_00_1b.0.analog-stereo
+
+# Using pulseaudio-utils (append "-s $sinkname" without quotes to override default sink)
+bindsym $mod+F6 exec --no-startup-id $volumepath/volume -n -t $statuscmd -u $statussig up $volumestep
+bindsym $mod+F5 exec --no-startup-id $volumepath/volume -n -t $statuscmd -u $statussig down $volumestep
+bindsym $mod+F3 exec --no-startup-id $volumepath/volume -n -t $statuscmd -u $statussig mute
