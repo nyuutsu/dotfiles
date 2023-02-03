@@ -23,6 +23,7 @@ include "%L"
 <Multi_key> <o> <p> <t> : "⌥" U2325 # OPTION KEY
 <Multi_key> <d> <e> <l> : "⌦" U2326 # ERASE TO THE RIGHT
 <Multi_key> <b> <a> <c> <k> : "⌫" U2329 # ERASE TO THE LEFT
+<Multi_key> <c> <t> <r> <l> : "⎈" U2388 # HELM SYMBOL
 <Multi_key> <e> <s> <c> : "⎋" U238B # BROKEN CIRCLE WITH NORTHWEST ARROW
 <Multi_key> <r> <e> <t> : "⏎" U23CE # RETURN SYMBOL
 <Multi_key> <e> <j> <e> <c> <t> : "⏏" U23CF # EJECT SYMBOL

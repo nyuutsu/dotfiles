@@ -25,16 +25,13 @@ for_window [class="TelegramDesktop"] move to workspace 5
 ## startup
 
 exec_always --no-startup-id picom --experimental-backends -cb --config ~/.config/picom/picom.conf
+#exec --no-startup-id blueman
 exec --no-startup-id dunst
 exec --no-startup-id feh --bg-scale $HOME/.config/feh/wallpaper.jpg
 exec --no-startup-id nm-applet
 exec --no-startup-id redshift-gtk
 exec --no-startup-id "xmodmap ~/.Xmodmap"
-
-exec --no-startup-id conky -d -c ~/.i3/conky-right
-exec --no-startup-id conky -d -c ~/.i3/conky-left
-
-exec keepassxc
+exec --no-startup-id keepassxc
 
 ## decorations
 

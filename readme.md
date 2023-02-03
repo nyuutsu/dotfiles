@@ -20,6 +20,8 @@ I'm especially happy with the:
 
 * ~~blobmoji urxvt compatibility variant~~ *coming soon*
 
+Firefox profile names/paths are randomly assigned & so my userChrome will likely involve some manual fiddling.
+
 # On files in `/etc` and `/usr`
 
 Some of these are system config files, which are sort of like dotfiles.
@@ -57,3 +59,5 @@ If you must do so anyway, you might need to run `chmod +x` on it first.
 * vimrc to be included shortly
 
 * os install script to be included eventually
+
+* program-specific oddities might be noted [here](https://gist.github.com/nyuutsu/fd391af898608f34088735c6eba77417)
