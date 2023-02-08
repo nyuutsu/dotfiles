@@ -13,4 +13,7 @@
         ".vimrc": "plaintext"
     },
     "window.zoomLevel": 1,
+    "[python]": {
+        "editor.formatOnType": true
+    },
 }

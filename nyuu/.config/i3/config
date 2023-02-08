@@ -12,10 +12,11 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 ## initial workspace assignments
 
 assign [class="Firefox"] → 1
-assign [class="Code"] → 2
+# can I make it go "iff there isn't already an instance of this, then, open it here"? short of that: this is getting in th way
+#assign [class="Code"] → 2
 assign [class="discord" instance="discord"] → 3
 assign [class="Signal"] → 4
-assign [class="TelegramDesktop"] $ws5
+assign [class="TelegramDesktop"] 5
 assign [class="qBittorrent"] → 10
 
 for_window [instance="mtga"] move to workspace 2
