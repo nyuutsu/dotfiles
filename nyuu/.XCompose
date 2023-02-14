@@ -1,13 +1,18 @@
 include "%L"
 # todo: ᴾₖᴹₙ? bulbapedia just uses CSS xforms on "p k m n"
 
-## 💘 arrows 💘 [broadly construed]
-
-# "arrow keys"
+# 💘 arrows 💘
 <Multi_key> <less> <minus> : "←" U2190 # LEFTWARDS ARROW
 <Multi_key> <caret> <bar> : "↑" U2191 # UPWARDS ARROW
 <Multi_key> <minus> <greater> : "→" U2192 # RIGHTWARDS ARROW
 <Multi_key> <v> <bar> : "↓" U2193 # DOWNWARDS ARROW
+
+# spaces
+<Multi_key> <n> <b> <s> <p> : " " nobreakspace
+<Multi_key> <space> <0> : "​" U200B # ZERO WIDTH SPACE
+<Multi_key> <z> <w> <s> <p> : "​" U200B # ZERO WIDTH SPACE
+<Multi_key> <minus> <space> : "­" U00AD # SOFT HYPHEN
+<Multi_key> <s> <h> <y> : "­" U00AD # SOFT HYPHEN
 
 # keyboard
 <Multi_key> <bar> <bar> : "¦" U00A6 # BROKEN BAR
@@ -30,7 +35,7 @@ include "%L"
 <Multi_key> <m> <e> <t> <a> : "◆" U25C6 # BLACK DIAMOND
 
 
-## 📝 letters & letterlikes 📝
+## 📝 letters 📝
 
 # greek
 <Multi_key> <g> <d> : "Δ" U0394 # GREEK CAPITAL LETTER DELTA
@@ -54,7 +59,20 @@ include "%L"
 <Multi_key> <v> <v> : "✓" U2713 # CHECK MARK
 <Multi_key> <X> <X> : "✗" U2717 # BALLOT X
 
-# puncts
+
+# math
+<Multi_key> <asciitilde> <asciitilde> : "≈" U2248
+<Multi_key> <exclam> <asciitilde> <asciitilde> : "≉" U2249
+<Multi_key> <slash> <equal> : "≠" U2248
+<Multi_key> <equal> <slash> : "≠" U2248
+<Multi_key> <exclam> <equal> : "≠" U2260
+<Multi_key> <greater> <equal> : "≥" U2265
+<Multi_key> <less> <equal> : "≤" U2264
+<Multi_key> <exclam> <less> : "≮" U226E
+<Multi_key> <exclam> <greater> : "≯" U226F
+<Multi_key> <equal> <equal> : "≡" U2261
+
+# punctuation
 
 <Multi_key> <asterisk> <minus> : "•" U2022 # BULLET
 <Multi_key> <period> <period> <period> : "…" U2026 # HORIZONTAL ELLIPSIS
