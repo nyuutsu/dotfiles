@@ -16,4 +16,8 @@
     "[python]": {
         "editor.formatOnType": true
     },
+    "editor.unicodeHighlight.allowedCharacters": {
+        "’": true,
+        "‘": true
+    },
 }

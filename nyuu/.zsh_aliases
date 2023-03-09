@@ -23,7 +23,8 @@ alias findn='find ./ -name'
 alias grepr='grep -r'
 alias dots='cd ~/repos/dotfiles'
 # 😂
-alias nyuu.page='cd ~/repos/nyuu.page && sass theme/static/sass/all.scss theme/static/sass/all.css && pelican content && rsync -avc --delete output/ nyuu.page:/var/www/html/ && rm theme/static/sass/all.css & rm theme/static/sass/all.css.map'
+alias nyuu.page='cd ~/repos/nyuu.page && sass theme/static/sass/all.scss theme/static/sass/all.css && make publish && rsync -avc --delete output/ nyuu.page:/var/www/ && rm theme/static/sass/all.css & rm theme/static/sass/all.css.map'
+alias nyuu.page.old='cd ~/repos/nyuu.page && sass theme/static/sass/all.scss theme/static/sass/all.css && pelican content && rsync -avc --delete output/ nyuu.page:/var/www/ && rm theme/static/sass/all.css & rm theme/static/sass/all.css.map'
 
 alias shutdown="sudo shutdown now"
 
