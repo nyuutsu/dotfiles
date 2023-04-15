@@ -7,7 +7,7 @@
     "editor.fontLigatures": true,
     "editor.tabSize": 2,
     "debug.terminal.clearBeforeReusing": true,
-    "workbench.colorTheme": "Solarized Dark",
+    "workbench.colorTheme": "GitHub Dark Default",
     "explorer.confirmDragAndDrop": false,
     "files.associations": {
         ".vimrc": "plaintext"
@@ -20,4 +20,7 @@
         "’": true,
         "‘": true
     },
+    "explorer.confirmDelete": false,
+    "update.showReleaseNotes": false,
+    
 }

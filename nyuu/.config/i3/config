@@ -14,13 +14,12 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 assign [class="Firefox"] → 1
 # can I make it go "iff there isn't already an instance of this, then, open it here"? short of that: this is getting in th way
 #assign [class="Code"] → 2
-#assign [class="discord" instance="discord"] → 3
 #assign [class="Signal"] → 4
 #assign [class="TelegramDesktop"] 5
 assign [class="qBittorrent"] → 10
 
 #for_window [instance="mtga"] move to workspace 2
-for_window [class="discord" instance="discord"] move to workspace 3
+for_window [class="discord" instance="discord"] move to workspace 4
 #for_window [class="TelegramDesktop"] move to workspace 5
 
 ## startup
@@ -28,11 +27,14 @@ for_window [class="discord" instance="discord"] move to workspace 3
 exec_always --no-startup-id picom --experimental-backends -cb --config ~/.config/picom/picom.conf
 exec --no-startup-id dunst
 exec --no-startup-id feh --bg-scale $HOME/.config/feh/wallpaper.jpg
+# this worked great at making the scroll wheel scroll more
+# unfortunately it doesn't appear to be compatible with some things
+# I ran into trouble using scroll-zoom in GIMP, for example
 #exec --no-startup-id imwheel
 exec --no-startup-id keepassxc
 exec --no-startup-id nm-applet
 exec --no-startup-id redshift-gtk
-exec --no-startup-id "xmodmap ~/.Xmodmap"
+exec_always --no-startup-id "xmodmap ~/.Xmodmap"
 
 ## decorations
 
@@ -201,7 +203,7 @@ bar {
   # `output` is device-specific. safe bet:
   #   run `xrandr -q | head -n 2`, then
   #   change `output` to the first word of the second line
-  output eDP-1
+  output HDMI-0
   separator_symbol "⚕"
   font pango:FiraCode Nerd Font 8 
   colors {
@@ -247,6 +249,6 @@ set $volumestep 5
 #set $sinkname alsa_output.pci-0000_00_1b.0.analog-stereo
 
 # Using pulseaudio-utils (append "-s $sinkname" without quotes to override default sink)
-bindsym $mod+F6 exec --no-startup-id $volumepath/volume -n -t $statuscmd -u $statussig up $volumestep
-bindsym $mod+F5 exec --no-startup-id $volumepath/volume -n -t $statuscmd -u $statussig down $volumestep
-bindsym $mod+F3 exec --no-startup-id $volumepath/volume -n -t $statuscmd -u $statussig mute
+bindsym $mod+F3 exec --no-startup-id $volumepath/volume -n -t $statuscmd -u $statussig up $volumestep
+bindsym $mod+F2 exec --no-startup-id $volumepath/volume -n -t $statuscmd -u $statussig down $volumestep
+bindsym $mod+F4 exec --no-startup-id $volumepath/volume -n -t $statuscmd -u $statussig mute
