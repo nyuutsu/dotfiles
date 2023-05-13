@@ -39,7 +39,7 @@ alias make='colormake'
 alias ping='prettyping'
 alias dmesg='dmesg --color=always | less'
 
-alias find='noglob find'
+
 alias wget='noglob wget'
 
 LSOPTS="-lAvF --si --color=auto"

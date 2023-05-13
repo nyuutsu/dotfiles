@@ -19,7 +19,7 @@ assign [class="Firefox"] → 1
 assign [class="qBittorrent"] → 10
 
 #for_window [instance="mtga"] move to workspace 2
-for_window [class="discord" instance="discord"] move to workspace 4
+for_window [class="discord" instance="discord"] move to workspace 3
 #for_window [class="TelegramDesktop"] move to workspace 5
 
 ## startup
@@ -47,10 +47,11 @@ hide_edge_borders both
 ## 📸 screenshots 📸
 
 # save screenshot
-bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date).png"
+# filename pattern inspo: $(date), $(date +%F_%T), $(date +%s)
+bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date +%F_%T).png"
 # 😎😎😎 shift + printscreen → click + drag crop tool 😎😎😎
-bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date).png"
-bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/$(date).png"
+bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date +%F_%T).png"
+bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/$(date +%F_%T).png"
 
 # clipboard screenshot
 bindsym Ctrl+Print exec --no-startup-id maim | xclip -selection clipboard -t image/png

@@ -71,16 +71,6 @@ RPROMPT_jobs="%1(j.%%# %{$fg_no_bold[cyan]%}%j%{$reset_color%}  .)"
 RPROMPT_time="%{$fg_bold[black]%}%*%{$reset_color%}"
 RPROMPT=$RPROMPT_code$RPROMPT_jobs$RPROMPT_time
 
-# reconnect ssh socket in an existing tmux session
-function fixssh {
-  for line in "${(f)$(tmux show-environment)}"; do
-    if [[ $line =~ '^SSH_\w+=' ]]; then
-      echo export $line
-      export $line
-    fi
-  done
-}
-
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
 # keybindings

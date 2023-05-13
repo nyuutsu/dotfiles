@@ -22,5 +22,6 @@
     },
     "explorer.confirmDelete": false,
     "update.showReleaseNotes": false,
+    "python.defaultInterpreterPath": "python",
     
 }
