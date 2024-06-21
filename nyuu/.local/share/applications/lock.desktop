@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Lock
+GenericName=i3lock script
+Comment=i3lock script
+Exec=/home/nyuu/scripts/lock.sh
+Icon=steam_icon_646570
+Type=Application
+Categories=Utility;

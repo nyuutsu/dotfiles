@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=PKHeX
+Exec=env WINEPREFIX=/home/nyuu/.wine-pkhex wine /home/nyuu/scripts/pkhex/PKHeX_221218.exe
+Type=Application
+Terminal=false
+Icon=pkhex
+Categories=Game;Utility;

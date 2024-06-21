@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=Feh
+GenericName=Image Viewer
+Exec=feh --draw-filename --scale-down --auto-zoom --start-at %F
+Comment=Image viewer
+Terminal=false
+Type=Application
+Icon=feh
+Categories=Graphics;
+MimeType=image/jpeg;image/png;image/gif;image/svg+xml;

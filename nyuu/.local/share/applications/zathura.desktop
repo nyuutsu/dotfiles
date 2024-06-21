@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=Zathura
+GenericName=Document Viewer
+Comment=View PDF, PS, and DjVu files
+Exec=zathura %f
+Icon=zathura
+Terminal=false
+Type=Application
+MimeType=application/pdf;application/x-pdf;application/postscript;application/epub+zip;application/x-dvi;
+Categories=Viewer;Graphics;
