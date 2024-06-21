@@ -1,0 +1,3 @@
+[submodule "nyuu/.config/tmux/plugins/catppuccin"]
+	path = nyuu/.config/tmux/plugins/catppuccin
+	url = git@github.com:catppuccin/tmux.git
