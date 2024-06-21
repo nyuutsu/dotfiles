@@ -1,0 +1,132 @@
+[settings]
+columns = ~~#disc~~#track,artist,<title><version| (<version>)|><remark| [<remark>]|><venue| [<venue>]|>,(<~originalyear>) <album> <discsubtitle|(<discsubtitle>)|> <boxset|{<boxset>}|>,~#length
+	
+default_rating = 0.5
+scan = /home/nyuu/Music
+
+[memory]
+browser = Paned
+chooser_dir = /home/nyuu/Music
+column_expands = ~~#disc~~#track,0,artist,0,<title><version| (<version>)|><remark| [<remark>]|><venue| [<venue>]|>,0,(<~originalyear>) <album> <discsubtitle|(<discsubtitle>)|> <boxset|{<boxset>}|>,0
+	
+column_widths = ~~#disc~~#track,92,artist,224,<title><version| (<version>)|><remark| [<remark>]|><venue| [<venue>]|>,1115,(<~originalyear>) <album> <discsubtitle|(<discsubtitle>)|> <boxset|{<boxset>}|>,362
+	
+download_cover_art_maximized = 0
+download_cover_art_position = 236 123
+download_cover_art_size_ = 2055 1109
+exfalso_last_active_version = 4.6.0
+exfalso_maximized = 0
+exfalso_paned_position = 0.22108345534407028
+exfalso_position = 0 0
+exfalso_size_ = 1366 748
+open_browsers = 
+plugin_cover_maximized = 0
+plugin_cover_position = 809 425
+plugin_cover_size_ = 995 550
+plugin_prefs_maximized = 0
+plugin_prefs_position = 683 0
+plugin_prefs_size_ = 682 748
+plugin_selection = APEv2 to ID3v2
+prefs_page = library
+queue_disable = False
+queue_expanded = False
+quodlibet_last_active_version = 4.6.0
+quodlibet_maximized = 4
+quodlibet_position = 0 0
+quodlibet_properties_maximized = 0
+quodlibet_properties_pos = 0.3223062381852552
+quodlibet_properties_position = 51 -11
+quodlibet_properties_size_ = 1255 675
+quodlibet_properties_size_single = 1058 553
+quodlibet_size_ = 2554 1414
+seek = 978830
+sidebar_pos = 0.24947916666666667
+sortby = 0~~#disc~~#track
+	
+volume = 1.0
+
+[player]
+gst_buffer = 3.0
+is_playing = False
+replaygain_mode = auto
+
+[browsers]
+albumlist_pos = 0.40043923865300146
+collectionbrowser_pos = 0.40015661707126077
+covergrid_pos = 0.8194444444444444
+equal_pane_width = true
+pane_selection = 1	.
+	1	.
+	0	1  	.
+	1	.
+panedbrowser_pane_widths = 0.25052083333333336,0.3319386331938633,0.49737670514165794
+	
+panedbrowser_pos = 0.40789473684210525
+panes = albumartist	<~originalyear> (<media=CD|💿|><media=Vinyl|📀|><media=Blu-Ray|🔵|><media=Web|🖥️|><media=DVD|🍿|><media=SACompactDisc|🦸|><media=DAT|📁|><media=Soundboard|🎚️|><media=Cassette|📼|><media=Unknown|🤷|><releasetype=Live|🌱|><releasetype=Anthology|📦|><releasetype=Pirate|🏴‍☠️|> <~year>) <album>	<~#disc|<~#disc>|> <discsubtitle|(<discsubtitle>)|> 	genre
+playlistsbrowser_pos = 0.40015661707126077
+query_text = 
+
+[library]
+watch = true
+
+[__config__]
+version = 0
+
+[plugins]
+active_plugins = Theme Switcher
+	APEv2 to ID3v2
+	refresh-songs
+	WaveformSeekBar
+	Notify
+	Tray Icon
+	SeekBar
+	Convert Encodings
+	Split Album
+	embedded_edit
+animosd_coversize = 120
+animosd_font = ProFont IIx Nerd Font 22
+animosd_monitor = 0
+animosd_outline = -1.0 0.0 0.0
+animosd_pos_x = 1.0
+animosd_pos_y = 0.0
+animosd_shadow = -1.0 0.0 0.0 0.0
+cover_edit = False
+cover_edit_cmd = gimp
+cover_engine_discogs = True
+cover_filename = cover.jpg
+cover_fit = True
+cover_pos = 0.3928934010152284
+cover_resultsmax = 3
+cover_searchraw = False
+download_cover_art_preview_size = 500.0
+icon_tooltip = <album|<album~discnumber~part~tracknumber~title~version>|<artist~title~version>>
+missing_query_include_empty = True
+notify_bodypattern = <artist|<artist>>
+	<album|<album><discsubtitle| - <discsubtitle>>> (<originaldate|<~originalyear>>)
+	
+	<genre>
+notify_show_notifications = all
+notify_show_only_when_unfocused = True
+notify_titlepattern = <title>
+quodlibet.fake.plugins.gajim_status_accounts = 
+quodlibet.fake.plugins.gajim_status_pattern = <artist> - <title>
+quodlibet.fake.plugins.gajim_status_paused = True
+quodlibet.fake.plugins.gajim_status_statuses = online chat
+quodlibet.fake.plugins.visualisations_executable = projectM-pulseaudio
+randomalbum_use_weights = 0
+shufflebygrouping_grouping = ~grouping~album~albumartist
+shufflebygrouping_grouping_filter = grouping
+squeezebox_debug = False
+theme switcher_prefer_dark = true
+theme switcher_theme = Gruvbox-Dark-BL
+titlecase_allow_all_caps = True
+titlecase_human_title_case = True
+
+[rename]
+spaces = false
+windows = false
+
+[editing]
+alltags = true
+split_on = / & , //
+
