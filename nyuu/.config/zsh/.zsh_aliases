@@ -1,0 +1,57 @@
+# package management
+alias update='paru -Syyu --noconfirm'
+alias install='paru -S --noconfirm'
+alias uninstall='paru -Rs --noconfirm'
+alias uninstall-hard='paru -Rsdd --noconfirm'
+alias orphans="sudo -- zsh -c 'pacman -Qttdq | pacman -Rns - --noconfirm'"
+alias cache-trim="sudo -- zsh -c 'paccache -rk1 && paccache -ruk0'"
+
+alias dmesg='dmesg --color=always | less'
+
+alias shutdown="sudo shutdown now"
+alias myip='curl http://icanhazip.com ; echo'
+alias epoch="date +%s"
+
+alias ls="ls -lAvF --si --color=auto"
+alias lss="ls -f --color=auto"
+
+alias dl="yt-dlp --embed-metadata -o '~/dl/%(uploader)s/%(title)s.%(ext)s'"
+
+# Function for batch downloading videos from a file and sorting them into subfolders named after the author
+alias dl-batch="function _yt_batch() {
+  while IFS= read -r url; do
+    [ -n \"\$url\" ] && yt-dlp --embed-metadata -o '~/dl/%(uploader)s/%(title)s.%(ext)s' \"\$url\";
+  done < \"\$1\"
+}; _yt_batch"
+
+# Procedure to check for correct fallback fonts in various contexts
+alias dunst-test="
+pkill dunst && 
+dunst &
+notify-send 'Hello 😎' '😎 World 😎 天草市立天草キリシタン館 😎'
+"
+
+alias sshfs-mount-mabase='
+sshfs -v -o reconnect -o ServerAliveInterval=1 -o ServerAliveCountMax=5 nyuu@mabase:/home/nyuu ~/mabase/home &
+sshfs -v -o reconnect -o ServerAliveInterval=1 -o ServerAliveCountMax=5 nyuu@mabase:/home/nyuu/repos ~/mabase/repos &
+sshfs -v -o reconnect -o ServerAliveInterval=1 -o ServerAliveCountMax=5 nyuu@mabase:/home/nyuu/Documents ~/mabase/Documents &
+sshfs -v -o reconnect -o ServerAliveInterval=1 -o ServerAliveCountMax=5 nyuu@mabase:/home/nyuu/Downloads ~/mabase/Downloads &
+sshfs -v -o reconnect -o ServerAliveInterval=1 -o ServerAliveCountMax=5 nyuu@mabase:/home/nyuu/Pictures ~/mabase/Pictures &
+sshfs -v -o reconnect -o ServerAliveInterval=1 -o ServerAliveCountMax=5 nyuu@mabase:/storage/Music ~/mabase/Music &
+sshfs -v -o reconnect -o ServerAliveInterval=1 -o ServerAliveCountMax=5 nyuu@mabase:/storage/Videos ~/mabase/Videos &
+sshfs -v -o reconnect -o ServerAliveInterval=1 -o ServerAliveCountMax=5 nyuu@mabase:/storage ~/mabase/storage &
+'
+
+alias sshfs-unmount-mabase='
+fusermount3 -uz ~/mabase/home;
+fusermount3 -uz ~/mabase/repos;
+fusermount3 -uz ~/mabase/Documents;
+fusermount3 -uz ~/mabase/Downloads;
+fusermount3 -uz ~/mabase/Pictures;
+fusermount3 -uz ~/mabase/Music;
+fusermount3 -uz ~/mabase/Videos;
+fusermount3 -uz ~/mabase/storage;'
+
+alias sshfs-remount-mabase='
+sshfs-unmount-mabase
+sshfs-mount-mabase'
