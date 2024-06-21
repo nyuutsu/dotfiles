@@ -1,9 +1,10 @@
 configuration {
-  terminal: "/usr/bin/urxvt";
-  modi: "window,drun,run,ssh,filebrowser";
+  terminal: "/usr/bin/st";
+  modi: "drun,run";
   hide-scrollbar: "true";
   levenshtein-sort: false;
   sidebar-mode: true;
   cycle: true;
 }
-@theme "/usr/share/rofi/themes/nord.rasi"
+
+@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
