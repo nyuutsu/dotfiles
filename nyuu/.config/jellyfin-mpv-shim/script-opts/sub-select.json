@@ -1,0 +1,36 @@
+[
+    {
+        "alang": ["*"],
+        "slang": ["*"]
+    },
+    {
+        "alang": ["eng?", "und"],
+        "slang": ["eng?", "und"],
+        "condition": "sub.forced"
+    },
+    {
+        "alang": ["jpn", "ja"],
+        "slang": "eng?"
+    },
+    {
+        "inherit": "^",
+        "slang": "und"
+    },
+    {
+        "alang": "eng?",
+        "slang": ["eng?", "und"]
+
+    },
+    {
+        "alang": "eng?",
+        "slang": "no"
+    },
+    {
+        "alang": "*",
+        "slang": ["eng?", "und"]
+    },
+    {
+        "alang": "no",
+        "slang": "no"
+    }
+]
