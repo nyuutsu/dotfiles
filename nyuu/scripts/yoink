@@ -1,0 +1,26 @@
+#!/usr/bin/env python3
+
+# this script accepts the name of a base-level item (file or folder)
+# in my seedboxs' downloads directory & downloads it via rsync
+# to my local downloads folder ~/Downloads
+
+import argparse
+import subprocess
+
+def download_files(input_string):
+  command = f'rsync -avz --progress -e ssh "nyuu@seedbox:~/files/downloads/{input_string}" ~/Downloads'
+  try:
+    return_code = subprocess.call(command, shell=True)
+    if return_code == 0:
+      print(f'Download of {input_string} completed successfully.')
+    else:
+      print(f'Error occurred with return code: {return_code}')
+  except Exception as e:
+    print(f'Error occurred: {str(e)}')
+
+if __name__ == "__main__":
+  parser = argparse.ArgumentParser()
+  parser.add_argument("input_string", help="The name of the file or directory to be downloaded.")
+  args = parser.parse_args()
+
+  download_files(args.input_string)

@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+import argparse
+import subprocess
+
+# accepts a file containing newline-separated names of base-level
+# items (files or folders) in my seedboxs' downloads directory 
+# & downloads it via rsync to my local downloads folder ~/Downloads
+
+def download_files(input_filepath):
+  with open(input_filepath, 'r') as file:
+    lines = file.read().splitlines()
+  
+  for line in lines:
+    command = f'rsync -avz --partial --progress -e ssh "nyuu@seedbox:~/files/downloads/{line}" ~/Downloads'
+    try:
+      return_code = subprocess.call(command, shell=True)
+      if return_code == 0:
+        print(f'Download of {line} completed successfully.')
+      else:
+        print(f'Error occurred with return code: {return_code} while trying to download {line}')
+    except Exception as e:
+      print(f'Error occurred: {str(e)}')
+
+if __name__ == "__main__":
+  parser = argparse.ArgumentParser()
+  parser.add_argument("input_filepath", help="The path to a .txt file with names of files/directories to be downloaded.")
+  args = parser.parse_args()
+
+  download_files(args.input_filepath)
