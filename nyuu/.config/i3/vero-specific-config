@@ -1,0 +1,27 @@
+exec --no-startup-id xcompmgr
+exec --no-startup-id sh -c 'sleep 10; redshift-gtk'
+
+exec_always --no-startup-id xrdb -merge $XDG_CONFIG_HOME/x11/Xresources
+exec_always --no-startup-id sh -c 'if [ -f "$XDG_CONFIG_HOME/x11/Xmodmap" ]; then xmodmap "$XDG_CONFIG_HOME/x11/Xmodmap"; fi'
+
+exec --no-startup-id xwallpaper --center Pictures/wallpapers/1920x1080/ign-waifu.png
+exec --no-startup-id find ~/Pictures/wallpapers/1920x1080 -type f > ~/.wallpaper_list.txt
+
+bindsym $mod+p exec xwallpaper --center Pictures/wallpapers/1920x1080/ign-waifu.png
+bindsym $mod+o exec xwallpaper --center "$(shuf -n 1 ~/.wallpaper_list.txt)"
+
+bindsym $mod+s exec --no-startup-id maim --select "/home/$USER/Pictures/$(date +%F_%T).png"
+
+
+bindsym $mod+F6 exec --no-startup-id brightnessctl set +10% && dunstify -u low -t 3000 -r 90210 "☀️ $(brightnessctl | grep -oP '\d+%' | tr -d '\n')"
+bindsym $mod+F5 exec --no-startup-id brightnessctl set 10%- && dunstify -u low -t 3000 -r 90210 "☀️ $(brightnessctl | grep -oP '\d+%' | tr -d '\n')"
+
+
+
+set $volumepath ~/scripts
+set $statuscmd i3status
+set $statussig SIGUSR1
+set $volumestep 5
+bindsym $mod+F3 exec --no-startup-id $volumepath/volume -y -n -t $statuscmd -u $statussig up $volumestep
+bindsym $mod+F2 exec --no-startup-id $volumepath/volume -y -n -t $statuscmd -u $statussig down $volumestep
+bindsym $mod+F1 exec --no-startup-id $volumepath/volume -y -n -t $statuscmd -u $statussig mute

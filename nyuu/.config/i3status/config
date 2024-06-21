@@ -6,13 +6,14 @@ general {
   interval = 5
 }
 
-order += "ipv6"
+#order += "ipv6"
 order += "wireless _first_"
 #order += "ethernet _first_"
 order += "volume master"
-#order += "battery all"
+order += "battery all"
 order += "disk /"
-order += "disk /home"
+#order += "disk /home"
+#order += "disk /storage"
 #order += "load"
 order += "cpu_usage"
 order += "memory"
@@ -29,36 +30,40 @@ ethernet _first_ {
 }
 
 volume master {
-  format = " ♪ %volume" 
+  format = " ♪ %volume"
   device = "default"
   mixer = "Master"
   mixer_idx = 0
 }
 
 battery all {
-  format = "BAT %status %percentage %remaining"
+  format = "󰁹 %status %percentage %remaining"
 }
 
 disk "/" {
-  format = " / @ %percentage_used"
+  format = " / %avail"
 }
 
 #disk "/media/hdd-array" {
-#       format = "array @ %percentage_used"
+#       format = "array @ %avail"
 #}
 
 disk "/home" {
-  format = " home @ %percentage_used"
+  format = " /home %avail"
+}
+
+disk "/storage" {
+  format = " /storage %avail"
 }
 
 load {
-  format = "L %1min %5min %15min"
+  format = "load @ 1:%1min 5:%5min 15:%15min"
   format_above_threshold = "load @ %1min(!!) %5min %15min"
 }
 
 memory {
-  format = "塞 %percentage_used"
-  threshold_degraded = "1G"
+  format = "󰍛 MEM %available"
+  threshold_degraded = "3G"
   format_degraded = "MEMORY < %available"
 }
 
@@ -67,5 +72,5 @@ tztime local {
 } # %Z
 
 cpu_usage {
-  format = " %usage"
+  format = "󰍛 CPU %usage"
 }
