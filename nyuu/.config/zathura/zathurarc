@@ -1,9 +1,11 @@
 map <C-i> recolor
 set selection-clipboard clipboard
-set recolor "true"
 set recolor-lightcolor \#2f343f
 set recolor-keephue
-set font Hack normal 9
+set font ProFontIIx Nerd Font Mono normal 9
 set inputbar-bg	\#404552
 set statusbar-bg	\#404552
 set default-bg \#2f343f
+set adjust-open "best-fit"
+map r reload
+map R rotate
